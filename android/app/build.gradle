@@ -1,4 +1,16 @@
 apply plugin: "com.android.application"
+
+// Environment configuration files
+project.ext.envConfigFiles = [
+    productiondebug: ".env.production",
+    productionrelease: ".env.production",
+    developmentrelease: ".env.development",
+    developmentdebug: ".env.development",
+    stagingrelease: ".env.staging",
+    stagingdebug: ".env.staging"
+]
+
+// Load environment configuration
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 apply plugin: "com.facebook.react"
 
