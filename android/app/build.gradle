@@ -85,8 +85,34 @@ android {
     ndkVersion rootProject.ext.ndkVersion
 
     compileSdkVersion rootProject.ext.compileSdkVersion
+    // Define all product flavors
+flavorDimensions "default"
+productFlavors {
+    production {
+        // Define the minimum SDK version for this product flavor
+        minSdkVersion rootProject.ext.minSdkVersion
+        // Define the application id for this product flavor
+        applicationId "com.ironmanreactnativecli"
+        // Define the target SDK version for this product flavor
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        // Define the package name for this product flavor
+        resValue "string", "build_config_package", "com.ironmanreactnativecli"
+    }
+    staging {
+        minSdkVersion rootProject.ext.minSdkVersion
+        applicationId "com.ironmanreactnativecli.staging"
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        resValue "string", "build_config_package", "com.ironmanreactnativecli"
+    }
+    development {
+        minSdkVersion rootProject.ext.minSdkVersion
+        applicationId "com.ironmanreactnativecli.development"
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        resValue "string", "build_config_package", "com.ironmanreactnativecli"
+    }
+}
 
-    namespace "com.ironmanreactnativecli"
+
     defaultConfig {
         applicationId "com.ironmanreactnativecli"
         minSdkVersion rootProject.ext.minSdkVersion
