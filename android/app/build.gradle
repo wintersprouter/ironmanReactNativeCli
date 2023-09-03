@@ -85,6 +85,7 @@ android {
     ndkVersion rootProject.ext.ndkVersion
 
     compileSdkVersion rootProject.ext.compileSdkVersion
+    namespace "com.ironmanreactnativecli"
     // Define all product flavors
 flavorDimensions "default"
 productFlavors {
@@ -100,15 +101,17 @@ productFlavors {
     }
     staging {
         minSdkVersion rootProject.ext.minSdkVersion
-        applicationId "com.ironmanreactnativecli.staging"
+        applicationId "com.ironmanreactnativecli"
         targetSdkVersion rootProject.ext.targetSdkVersion
         resValue "string", "build_config_package", "com.ironmanreactnativecli"
+        applicationIdSuffix ".staging"
     }
     development {
         minSdkVersion rootProject.ext.minSdkVersion
-        applicationId "com.ironmanreactnativecli.development"
+        applicationId "com.ironmanreactnativecli"
         targetSdkVersion rootProject.ext.targetSdkVersion
         resValue "string", "build_config_package", "com.ironmanreactnativecli"
+        applicationIdSuffix ".development"
     }
 }
 
