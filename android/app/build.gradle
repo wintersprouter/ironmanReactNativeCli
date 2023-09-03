@@ -131,6 +131,7 @@ productFlavors {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            matchingFallbacks = ['debug', 'release'] //新增這行
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
