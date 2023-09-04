@@ -1,4 +1,17 @@
 apply plugin: "com.android.application"
+
+// Environment configuration files
+project.ext.envConfigFiles = [
+    productiondebug: ".env.production",
+    productionrelease: ".env.production",
+    developmentrelease: ".env.development",
+    developmentdebug: ".env.development",
+    stagingrelease: ".env.staging",
+    stagingdebug: ".env.staging"
+]
+
+// Load environment configuration
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 apply plugin: "com.facebook.react"
 
 /**
@@ -72,8 +85,37 @@ android {
     ndkVersion rootProject.ext.ndkVersion
 
     compileSdkVersion rootProject.ext.compileSdkVersion
-
     namespace "com.ironmanreactnativecli"
+    // Define all product flavors
+flavorDimensions "default"
+productFlavors {
+    production {
+        // Define the minimum SDK version for this product flavor
+        minSdkVersion rootProject.ext.minSdkVersion
+        // Define the application id for this product flavor
+        applicationId "com.ironmanreactnativecli"
+        // Define the target SDK version for this product flavor
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        // Define the package name for this product flavor
+        resValue "string", "build_config_package", "com.ironmanreactnativecli"
+    }
+    staging {
+        minSdkVersion rootProject.ext.minSdkVersion
+        applicationId "com.ironmanreactnativecli"
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        resValue "string", "build_config_package", "com.ironmanreactnativecli"
+        applicationIdSuffix ".staging"
+    }
+    development {
+        minSdkVersion rootProject.ext.minSdkVersion
+        applicationId "com.ironmanreactnativecli"
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        resValue "string", "build_config_package", "com.ironmanreactnativecli"
+        applicationIdSuffix ".development"
+    }
+}
+
+
     defaultConfig {
         applicationId "com.ironmanreactnativecli"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -92,6 +134,7 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            matchingFallbacks = ['debug', 'release'] //新增這行
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
