@@ -25,7 +25,13 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'ironmanReactNativeCli' do
+abstract_target 'ironmanReactNativeCliCommonPods' do
+  target 'ironmanReactNativeCli Dev' do
+    end
+  target 'ironmanReactNativeCli Stage' do
+    end
+  target 'ironmanReactNativeCli' do
+    end
   config = use_native_modules!
 
   # Flags change depending on the env values.
