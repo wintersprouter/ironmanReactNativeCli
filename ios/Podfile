@@ -1,3 +1,4 @@
+
 # Resolve react_native_pods.rb with node to allow for hoisting
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(
@@ -20,12 +21,26 @@ prepare_react_native_project!
 flipper_config = ENV['NO_FLIPPER'] == "1" ? FlipperConfiguration.disabled : FlipperConfiguration.enabled
 
 linkage = ENV['USE_FRAMEWORKS']
+
+#To control the linkage you can set the variable `USE_FRAMEWORKS` to `static` or `dynamic`
+#`static` will link all the frameworks statically
+#`dynamic` will link all the frameworks dynamically
+#This is useful if you are building a static framework and you want to link all the frameworks statically
+#or if you are building a dynamic framework and you want to link all the frameworks dynamically
+
+# You can also set the variable `USE_FRAMEWORKS` to `none` to disable linkage
+#This is useful if you are building a static framework and you want to link all the frameworks dynamically
+#or if you are building a dynamic framework and you want to link all the frameworks statically
+
 if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
   use_frameworks! :linkage => linkage.to_sym
 end
-
+$RNFirebaseAsStaticFramework = true
 abstract_target 'ironmanReactNativeCliCommonPods' do
+  # Flags change depending on the env values.
+  flags = get_default_flags()
+  use_frameworks! :linkage => :static
   target 'ironmanReactNativeCli Dev' do
     end
   target 'ironmanReactNativeCli Stage' do
@@ -34,8 +49,7 @@ abstract_target 'ironmanReactNativeCliCommonPods' do
     end
   config = use_native_modules!
 
-  # Flags change depending on the env values.
-  flags = get_default_flags()
+
 
   use_react_native!(
     :path => config[:reactNativePath],
@@ -46,7 +60,7 @@ abstract_target 'ironmanReactNativeCliCommonPods' do
     #
     # Note that if you have use_frameworks! enabled, Flipper will not work and
     # you should disable the next line.
-    :flipper_configuration => flipper_config,
+    # :flipper_configuration => flipper_config,
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
