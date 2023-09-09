@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "842709776740",
+    "project_id": "ironmandev-5c511",
+    "storage_bucket": "ironmandev-5c511.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842709776740:android:ce78a5608556442cc52271",
+        "android_client_info": {
+          "package_name": "com.ironmanreactnativecli.development"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842709776740-5hh0rq1jbg6ga6s8imkc6hvouedvem5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5XT_QmDlqAGAA92rK-gJDTKiRUKFVSNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842709776740-5hh0rq1jbg6ga6s8imkc6hvouedvem5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
