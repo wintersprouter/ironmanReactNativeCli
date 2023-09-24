@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC_C_llHcdxKsfWi9pMI9Q2TjKoxtRuwN0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>842709776740</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ironman.dev</string>
+	<key>PROJECT_ID</key>
+	<string>ironmandev-5c511</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ironmandev-5c511.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:842709776740:ios:b5b3a6fb7dfad732c52271</string>
+</dict>
+</plist>

@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* ironmanReactNativeCliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ironmanReactNativeCliTests.m */; };
-		136DA2116B16849ABA0A04B9 /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84088E36E5FD89EC28BE844C /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		42733F10E21B2DDD832309AE /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43E21E7BD846AA65A915E78 /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.a */; };
-		44D52BE81B97778AAE3C7660 /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ABEDC6B25DE5E0E4A3FB8E2 /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.a */; };
+		17564EACCD321723776FA1A7 /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDABD3B66383E7348A16683C /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli.framework */; };
+		77DD6FAFBB719AB7B2638433 /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Stage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977B1478AB5234A41A0ADE7A /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Stage.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		DC3306C42AA6208400864BFB /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		DC3306C52AA6208400864BFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -25,7 +24,11 @@
 		DC3306F02AA621C400864BFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		DC3306F92AA6273B00864BFB /* ironmanReactNativeCli Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC3306D22AA6208400864BFB /* ironmanReactNativeCli Dev-Info.plist */; };
 		DC3306FA2AA6273E00864BFB /* ironmanReactNativeCli Stage-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC3306F82AA621C400864BFB /* ironmanReactNativeCli Stage-Info.plist */; };
-		E460C511B1D69B7BD5163F7E /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BDAF70457B83218C5FE5EC /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.a */; };
+		DC4F0DEF2AAC793B00A495E0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DC4F0DEE2AAC793B00A495E0 /* FirebaseAnalytics */; };
+		DC4F0DF12AAC793B00A495E0 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DC4F0DF02AAC793B00A495E0 /* FirebaseAppDistribution-Beta */; };
+		DC4F0DF32AAC793B00A495E0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = DC4F0DF22AAC793B00A495E0 /* FirebaseCrashlytics */; };
+		DC5BAAA5C427657D10F90086 /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCliTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F56AF335B7ACDC8D64D46F /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCliTests.framework */; };
+		E479E87D8AC7E7D78D4B1CD0 /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11868BAF0BB23DCA035AB81A /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Dev.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 		00E356EE1AD99517003FC87E /* ironmanReactNativeCliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ironmanReactNativeCliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ironmanReactNativeCliTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ironmanReactNativeCliTests.m; sourceTree = "<group>"; };
+		10F56AF335B7ACDC8D64D46F /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCliTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCliTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11868BAF0BB23DCA035AB81A /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* ironmanReactNativeCli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ironmanReactNativeCli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ironmanReactNativeCli/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = ironmanReactNativeCli/AppDelegate.mm; sourceTree = "<group>"; };
@@ -49,19 +54,18 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ironmanReactNativeCli/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ironmanReactNativeCli/main.m; sourceTree = "<group>"; };
 		156629C1FC4A809F2DF1D298 /* Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.debug.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.debug.xcconfig"; sourceTree = "<group>"; };
-		3ABEDC6B25DE5E0E4A3FB8E2 /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-ironmanReactNativeCli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCli.debug.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCli/Pods-ironmanReactNativeCli.debug.xcconfig"; sourceTree = "<group>"; };
 		470FC16DCBEA2CEB1B4264AA /* Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.release.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.release.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ironmanReactNativeCli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCli.release.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCli/Pods-ironmanReactNativeCli.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-ironmanReactNativeCli-ironmanReactNativeCliTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCli-ironmanReactNativeCliTests.debug.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCli-ironmanReactNativeCliTests/Pods-ironmanReactNativeCli-ironmanReactNativeCliTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D80292D857429B8009B4EEA /* Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.debug.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ironmanReactNativeCli/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		84088E36E5FD89EC28BE844C /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ironmanReactNativeCli-ironmanReactNativeCliTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCli-ironmanReactNativeCliTests.release.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCli-ironmanReactNativeCliTests/Pods-ironmanReactNativeCli-ironmanReactNativeCliTests.release.xcconfig"; sourceTree = "<group>"; };
 		906F1850C4B7FBD7055231C9 /* Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.release.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.release.xcconfig"; sourceTree = "<group>"; };
+		977B1478AB5234A41A0ADE7A /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Stage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Stage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE7C6068CF7A85FEC458FCB /* Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.debug.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.debug.xcconfig"; sourceTree = "<group>"; };
-		A43E21E7BD846AA65A915E78 /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A617CDC6810DBA340DD4DA3C /* Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.release.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDABD3B66383E7348A16683C /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE05AF09F6D78687D818F69D /* Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.release.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.release.xcconfig"; sourceTree = "<group>"; };
 		C868A06243E765FE79E5F307 /* Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.debug.xcconfig"; path = "Target Support Files/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests/Pods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC3306D12AA6208400864BFB /* ironmanReactNativeCli Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ironmanReactNativeCli Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +73,6 @@
 		DC3306F72AA621C400864BFB /* ironmanReactNativeCli Stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ironmanReactNativeCli Stage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3306F82AA621C400864BFB /* ironmanReactNativeCli Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ironmanReactNativeCli Stage-Info.plist"; path = "/Users/ashely/ironmanReactNativeCli/ios/ironmanReactNativeCli Stage-Info.plist"; sourceTree = "<absolute>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F0BDAF70457B83218C5FE5EC /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44D52BE81B97778AAE3C7660 /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.a in Frameworks */,
+				DC5BAAA5C427657D10F90086 /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCliTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				136DA2116B16849ABA0A04B9 /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.a in Frameworks */,
+				DC4F0DEF2AAC793B00A495E0 /* FirebaseAnalytics in Frameworks */,
+				DC4F0DF32AAC793B00A495E0 /* FirebaseCrashlytics in Frameworks */,
+				DC4F0DF12AAC793B00A495E0 /* FirebaseAppDistribution-Beta in Frameworks */,
+				17564EACCD321723776FA1A7 /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E460C511B1D69B7BD5163F7E /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.a in Frameworks */,
+				E479E87D8AC7E7D78D4B1CD0 /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42733F10E21B2DDD832309AE /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.a in Frameworks */,
+				77DD6FAFBB719AB7B2638433 /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Stage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,10 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				84088E36E5FD89EC28BE844C /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli.a */,
-				F0BDAF70457B83218C5FE5EC /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Dev.a */,
-				A43E21E7BD846AA65A915E78 /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCli Stage.a */,
-				3ABEDC6B25DE5E0E4A3FB8E2 /* libPods-ironmanReactNativeCliCommonPods-ironmanReactNativeCliTests.a */,
+				BDABD3B66383E7348A16683C /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli.framework */,
+				11868BAF0BB23DCA035AB81A /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Dev.framework */,
+				977B1478AB5234A41A0ADE7A /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCli_Stage.framework */,
+				10F56AF335B7ACDC8D64D46F /* Pods_ironmanReactNativeCliCommonPods_ironmanReactNativeCliTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -246,6 +252,11 @@
 			dependencies = (
 			);
 			name = ironmanReactNativeCli;
+			packageProductDependencies = (
+				DC4F0DEE2AAC793B00A495E0 /* FirebaseAnalytics */,
+				DC4F0DF02AAC793B00A495E0 /* FirebaseAppDistribution-Beta */,
+				DC4F0DF22AAC793B00A495E0 /* FirebaseCrashlytics */,
+			);
 			productName = ironmanReactNativeCli;
 			productReference = 13B07F961A680F5B00A75B9A /* ironmanReactNativeCli.app */;
 			productType = "com.apple.product-type.application";
@@ -320,6 +331,9 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				DC4F0DED2AAC793B00A495E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -815,7 +829,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -842,7 +856,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -904,6 +918,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -970,6 +992,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -1151,6 +1181,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC4F0DED2AAC793B00A495E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC4F0DEE2AAC793B00A495E0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC4F0DED2AAC793B00A495E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		DC4F0DF02AAC793B00A495E0 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC4F0DED2AAC793B00A495E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		DC4F0DF22AAC793B00A495E0 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC4F0DED2AAC793B00A495E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
