@@ -23,7 +23,8 @@
     "ios:dev-deploy": "yarn ios:dev-release && firebase appdistribution:distribute ./ios_ipa_build/upowerDev.ipa --app 1:1040383152167:ios:990ad8559180accbbb7e02 --release-notes-file './release-note.txt' --groups 'IOS' && rm -rf ios_ipa_build/*"
   },
   "dependencies": {
-    "@react-native-firebase/app": "^18.3.2",
+    "@react-native-firebase/app": "^18.5.0",
+    "@react-native-firebase/crashlytics": "^18.5.0",
     "axios": "^1.5.0",
     "react": "18.2.0",
     "react-native": "0.72.4",
