@@ -12,16 +12,11 @@ import {useTheme} from 'react-native-paper';
 import {QueryClient, QueryClientProvider} from 'react-query';
 
 import PhotoList from './page/PhotoList';
-import {Button} from 'react-native-paper';
-import {match} from 'ts-pattern';
-import {useState} from 'react';
-
 const queryClient = new QueryClient({
   defaultOptions: {queries: {retry: 2}},
 });
 
 function App(): JSX.Element {
-  const [load, setLoad] = useState(false);
   const theme = useTheme();
 
   const backgroundStyle = {
@@ -33,18 +28,7 @@ function App(): JSX.Element {
     <QueryClientProvider client={queryClient}>
       <PaperProvider>
         <SafeAreaView style={backgroundStyle}>
-          {match(load)
-            .with(true, () => <PhotoList />)
-            .with(false, () => (
-              <Button
-                mode="contained"
-                onPress={() => setLoad(true)}
-                // eslint-disable-next-line react-native/no-inline-styles
-                style={{margin: 32}}>
-                Load
-              </Button>
-            ))
-            .exhaustive()}
+          <PhotoList />
         </SafeAreaView>
       </PaperProvider>
     </QueryClientProvider>

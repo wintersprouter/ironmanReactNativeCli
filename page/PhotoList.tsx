@@ -25,6 +25,8 @@ const PhotoList = () => {
     const response = await axios.get<Photo[]>(
       `https://api.unsplash.com/photos/?client_id=${Config.Access_Key}&per_page=15&page=1&order_by=popular`,
     );
+    console.log(response.status);
+    console.log('response.data', response.data);
     return response.data;
   };
   const {data: photos} = useQuery('photos', fetchPhotos);
@@ -42,8 +44,10 @@ const PhotoList = () => {
             Photo List
           </Text>
         </View>
+        {photos?.length === 0 && <Text>No</Text>}
         {photos?.map(photo => (
           <Card
+            key={photo.id}
             style={{
               marginBottom: 16,
               backgroundColor: theme.colors.outlineVariant,
