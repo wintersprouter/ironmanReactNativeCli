@@ -28,7 +28,7 @@ const PhotoList = () => {
       );
       return response.data;
     } catch (error) {
-      crashlytics().recordError(error);
+      crashlytics().recordError(error as Error);
       console.error(error);
     }
   };
