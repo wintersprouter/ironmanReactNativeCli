@@ -6,11 +6,11 @@
  */
 
 import {PaperProvider} from 'react-native-paper';
-import {SafeAreaView} from 'react-native';
+import {Button, SafeAreaView} from 'react-native';
 import * as React from 'react';
 import {useTheme} from 'react-native-paper';
 import {QueryClient, QueryClientProvider} from 'react-query';
-
+import crashlytics from '@react-native-firebase/crashlytics';
 import PhotoList from './page/PhotoList';
 const queryClient = new QueryClient({
   defaultOptions: {queries: {retry: 2}},
@@ -29,6 +29,7 @@ function App(): JSX.Element {
       <PaperProvider>
         <SafeAreaView style={backgroundStyle}>
           <PhotoList />
+          <Button title="Test Crash" onPress={() => crashlytics().crash()} />
         </SafeAreaView>
       </PaperProvider>
     </QueryClientProvider>

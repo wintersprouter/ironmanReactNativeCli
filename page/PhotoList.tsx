@@ -5,7 +5,7 @@ import Config from 'react-native-config';
 import React from 'react';
 import {ScrollView, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-
+import crashlytics from '@react-native-firebase/crashlytics';
 interface Photo {
   id: string;
   slug: string;
@@ -22,12 +22,15 @@ interface Photo {
 
 const PhotoList = () => {
   const fetchPhotos = async () => {
-    const response = await axios.get<Photo[]>(
-      `https://api.unsplash.com/photos/?client_id=${Config.Access_Key}&per_page=15&page=1&order_by=popular`,
-    );
-    console.log(response.status);
-    console.log('response.data', response.data);
-    return response.data;
+    try {
+      const response = await axios.get<Photo[]>(
+        `https://api.unsplash.com/photos/?client_id=${Config.Access_Key}&per_page=15&page=1&order_by=popular`,
+      );
+      return response.data;
+    } catch (error) {
+      crashlytics().recordError(error);
+      console.error(error);
+    }
   };
   const {data: photos} = useQuery('photos', fetchPhotos);
   const theme = useTheme();
