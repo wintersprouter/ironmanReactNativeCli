@@ -24,7 +24,7 @@ const PhotoList = () => {
   const fetchPhotos = async () => {
     try {
       const response = await axios.get<Photo[]>(
-        `https://api.unsplash.com/photos/?client_id=${Config.Access_Key}&per_page=15&page=1&order_by=popular`,
+        `https://api.unsplash.com/photos/?client_id=${Config.Access_Key}&per_page=30&page=1&order_by=popular`,
       );
       return response.data;
     } catch (error) {
@@ -33,34 +33,23 @@ const PhotoList = () => {
     }
   };
   const {data: photos} = useQuery('photos', fetchPhotos);
-  const theme = useTheme();
+
   return (
-    <SafeAreaView style={{margin: 16}}>
-      <ScrollView>
-        <View
-          style={{
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginVertical: 36,
-          }}>
-          <Text variant="titleLarge" style={{color: theme.colors.onTertiary}}>
+    <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.wrapper}>
+        <View style={styles.title}>
+          <Text variant="titleLarge" style={styles.titleText}>
             Photo List
           </Text>
         </View>
-        {photos?.length === 0 && <Text>No</Text>}
         {photos?.map(photo => (
-          <Card
-            key={photo.id}
-            style={{
-              marginBottom: 16,
-              backgroundColor: theme.colors.outlineVariant,
-            }}>
+          <Card key={photo.id} style={styles.cardContainer}>
             <Card.Cover source={{uri: photo.urls.regular}} />
             <Card.Content>
-              <Text variant="bodyLarge" style={{marginVertical: 16}}>
-                {photo.user.username}t
+              <Text variant="bodyLarge" style={styles.userNameText}>
+                {photo.user.username}
               </Text>
-              <Text variant="bodyMedium">{photo.description}t</Text>
+              <Text variant="bodyMedium">{photo.description}</Text>
             </Card.Content>
           </Card>
         ))}
@@ -68,4 +57,26 @@ const PhotoList = () => {
     </SafeAreaView>
   );
 };
+import {StyleSheet} from 'react-native';
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#F9F9F9',
+  },
+  wrapper: {
+    margin: 16,
+  },
+  title: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 36,
+  },
+  titleText: {
+    color: '#242424',
+  },
+  cardContainer: {
+    marginBottom: 16,
+    backgroundColor: '#FFF',
+  },
+  userNameText: {marginVertical: 16},
+});
 export default PhotoList;
